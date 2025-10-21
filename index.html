@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Taylor Swift Music Haven</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #d8b4fe, #fbcfe8);
+      margin: 0;
+      padding: 0;
+      color: #3b0764;
+    }
+    header {
+      background-color: #9333ea;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav {
+      background-color: #c084fc;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #9333ea;
+      border-radius: 8px;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fdf4ff;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    h2 {
+      text-align: center;
+      color: #6b21a8;
+      font-size: 1.8em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border-bottom: 2px solid #e9d5ff;
+      padding: 15px;
+      text-align: center;
+    }
+    th {
+      background-color: #f3e8ff;
+      color: #581c87;
+    }
+    img {
+      border-radius: 12px;
+      width: 120px;
+    }
+    ul {
+      list-style: "🎵 ";
+      padding-left: 20px;
+      font-size: 1.1em;
+    }
+    .members {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .member {
+      background-color: #e9d5ff;
+      border-radius: 16px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .member img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #9333ea;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+     a i {
+    margin-right: 5px;
+  }
+  </style>
+</head>
+<body>
+
+  <header>Taylor Swift Music Haven 🎤</header>
+
+  <nav>
+    <a href="#albums">Albums</a>
+    <a href="#songs">Songs</a>
+    <a href="#about">About</a>
+    <a href="#members">Members</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="albums">
+    <h2>💿 Albums</h2>
+    <table>
+      <tr>
+        <th>Album Cover</th>
+        <th>Album Title</th>
+        <th>Year</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><img src="data:image/jpeg;base64,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" alt="Fearless"></td>
+        <td>Fearless (Taylor’s Version)</td>
+        <td>2021</td>
+        <td>A re-recording of her 2008 album filled with heartwarming country-pop anthems about young love and growing up.</td>
+      </tr>
+      <tr>
+        <td><img src="data:image/jpeg;base64,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" alt="1989"></td>
+        <td>1989 (Taylor’s Version)</td>
+        <td>2023</td>
+        <td>A pop masterpiece that showcases her bold transformation — featuring hits like “Blank Space” and “Style.”</td>
+      </tr>
+      <tr>
+        <td><img src="data:image/jpeg;base64,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" alt="Midnights"></td>
+        <td>Midnights</td>
+        <td>2022</td>
+        <td>A dreamy and introspective pop album exploring love, fame, and self-reflection under the midnight sky.</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="songs">
+    <h2>🎶 Top Songs</h2>
+    <ul>
+      <li>Love Story</li>
+      <li>You Belong With Me</li>
+      <li>Blank Space</li>
+      <li>Wildest Dreams</li>
+      <li>Anti-Hero</li>
+      <li>Cruel Summer</li>
+      <li>Karma</li>
+    </ul>
+    <p style="text-align:center;">🎧 Listen on <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02" target="_blank">Spotify</a></p>
+  </section>
+
+  <section id="about">
+    <h2>👩‍🎤 About Taylor Swift</h2>
+    <p style="text-align:center; font-size:1.1em;">
+      Taylor Swift is a singer-songwriter known for her storytelling through music. From her country roots to global pop fame,
+      she continues to inspire millions with her creativity, authenticity, and emotional depth.
+    </p>
+  </section>
+
+  <section id="members">
+    <h2>💜 Our Team</h2>
+    <div class="members">
+      <div class="member">
+        <img src="images/1.jpg" alt="Member 1">
+        <h3>John Patrick Zapatero</h3>
+        <p>Designer / Web Creator</p>
+      </div>
+      <div class="member">
+        <img src="images/3.jpg" alt="Member 2">
+        <h3>Mariel Astrero</h3>
+        <p>Content Writer</p>
+      </div>
+      <div class="member">
+        <img src="images/2.jpg" alt="Member 3">
+        <h3>Christian De Leon</h3>
+        <p>Researcher / Music Curator</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📩 Contact Us</h2>
+    <p style="text-align:center;">
+      💌 Email: <b>taylorswifthaven@gmail.com</b><br>
+      📍 Cabucbucan National High School<br>
+      🌸 Follow us on
+        <a href="https://facebook.com"><i class="fab fa-facebook"></i> Facebook</a> • 
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i> Instagram</a> • 
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i> Twitter</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Taylor Swift Music Haven | Created by Swifties 💜
+  </footer>
+
+</body>
+</html>
